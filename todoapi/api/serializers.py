@@ -29,7 +29,7 @@ class TaskSerializer(serializers.ModelSerializer):
         model = Task
         fields = ('user', 'title', 'description', 'date', 'created_at',)
         extra_kwargs = {'user': {'required': False}}
-        read_only_fields = ('user',)
+        read_only_fields = ('user','created_at')
 
 
     def to_representation(self, data):
