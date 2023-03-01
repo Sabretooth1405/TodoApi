@@ -27,9 +27,9 @@ class TaskSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Task
-        fields = ('user', 'title', 'description', 'date', 'created_at',)
+        fields = ('user', 'title', 'description', 'date', 'created_at','id')
         extra_kwargs = {'user': {'required': False}}
-        read_only_fields = ('user','created_at')
+        read_only_fields = ('user','created_at','id')
 
 
     def to_representation(self, data):

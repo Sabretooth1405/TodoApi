@@ -135,4 +135,4 @@ REST_FRAMEWORK = {
     ],
     'DEFAULT_SCHEMA_CLASS': 'rest_framework.schemas.coreapi.AutoSchema',
 }
-ALLOWED_HOSTS=['altsabretooth1405.pythonanywhere.com']
+ALLOWED_HOSTS=['altsabretooth1405.pythonanywhere.com','localhost']
