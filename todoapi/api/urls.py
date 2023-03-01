@@ -9,5 +9,5 @@ urlpatterns=[
     path('create/', views.TaskCreateView.as_view()),
     path('list/', views.TaskList),
     path('detail/<int:pk>', views.TaskRetriveUpdateDestroyView.as_view()),
-    path('docs/', include_docs_urls(title='TODO Api'))
+    path('docs/', include_docs_urls(title='TODO Api'),name='docs')
 ]
